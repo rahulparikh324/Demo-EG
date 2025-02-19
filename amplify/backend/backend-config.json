@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "sensaiiallapp158b90ef": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

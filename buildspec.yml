@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+
+    commands:
+      # install npm
+      - npm install
+
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - echo Installing EB CLI...
+
+  build:
+    commands:
+      - echo Building Docker image...
+      - docker build -f Dockerfile -t conduit-qa-fe-ecr .
+
+  post_build:
+    commands:
+      - echo Tagging Docker image...

@@ -1,0 +1,27 @@
+.imageContainer:hover .imageHover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.imageHover {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  display: none;
+}
+
+.imageContainer:hover .imageHover .overlay .icon {
+  display: flex;
+}

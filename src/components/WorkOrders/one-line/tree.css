@@ -1,0 +1,51 @@
+.node .node-circle {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 2;
+}
+.node .node-rect {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 2;
+}
+.link,
+.temp-link {
+  fill: none;
+  stroke: #b9b4b4;
+  opacity: 1;
+  stroke-width: 1px;
+}
+.temp-link {
+  stroke: #000;
+  stroke-width: 2px;
+}
+text {
+  cursor: pointer;
+  stroke-width: 0.5px;
+  stroke: #000;
+}
+.node .ghost-circle {
+  stroke: none;
+  opacity: 0.2;
+  display: none;
+}
+.node .show {
+  display: block;
+}
+.hover-content {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+.hover-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.hover-content li {
+  margin-bottom: 5px;
+}

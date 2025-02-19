@@ -1,0 +1,312 @@
+.calendar-div,
+.rbc-calendar {
+  height: 100%;
+}
+.rbc-toolbar {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rbc-toolbar .rbc-btn-group {
+  width: 125px;
+  z-index: 12;
+  position: relative;
+}
+.rbc-toolbar button {
+  font-weight: 800;
+  outline: none;
+  background: none;
+  border: 1px solid #d1d1d1;
+  padding: 10px 14px;
+}
+.rbc-toolbar .custom-toolbar {
+  width: 190px;
+}
+.rbc-toolbar .custom-toolbar .button-prev {
+  border-right: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.rbc-toolbar .custom-toolbar .button-next {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.rbc-toolbar .custom-toolbar .button-today {
+  border-radius: 4px;
+  margin-left: 14px;
+  margin-right: 20px;
+}
+.rbc-toolbar-label {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.rbc-month-view {
+  border-bottom: 0 !important;
+}
+
+.rbc-month-view,
+.rbc-time-view {
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column;
+}
+
+.rbc-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rbc-month-view .rbc-month-header,
+.rbc-time-view .rbc-time-header .rbc-time-header-content .rbc-time-header-cell,
+.rbc-time-view .rbc-time-content,
+.rbc-month-row .rbc-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.rbc-time-view .rbc-time-header .rbc-time-header-content .rbc-time-header-cell-single-day {
+  grid-template-columns: 1fr;
+}
+.rbc-month-row {
+  height: 100%;
+  position: relative;
+  min-height: 100px;
+}
+.rbc-month-row .rbc-row-bg {
+  height: 100%;
+  min-height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.rbc-header {
+  padding: 8px 14px;
+  font-weight: 800;
+  text-align: center;
+  border-bottom: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+}
+.rbc-month-view .rbc-month-header .rbc-header:first-child,
+.rbc-time-view .rbc-time-header .rbc-time-header-content .rbc-time-header-cell .rbc-header:first-child {
+  border-top-left-radius: 8px;
+}
+.rbc-month-view .rbc-month-header .rbc-header:last-child,
+.rbc-time-view .rbc-time-header .rbc-time-header-content .rbc-time-header-cell .rbc-header:last-child {
+  border-top-right-radius: 8px;
+  border-right: 0;
+}
+.rbc-row-bg .rbc-off-range-bg {
+  background: #eee;
+}
+.rbc-row-bg .rbc-day-bg {
+  border-bottom: 1px solid #d1d1d1;
+  width: 100%;
+  border-right: 1px solid #d1d1d1;
+}
+.rbc-month-row .rbc-row-content {
+  position: relative;
+}
+.rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell:last-child {
+  border-right: 0;
+}
+.rbc-month-row:last-child .rbc-row-content .rbc-row .rbc-date-cell {
+  border-bottom: 0;
+}
+.rbc-month-row:last-child .rbc-row-bg .rbc-off-range-bg {
+  border-bottom: 1px solid #d1d1d1;
+}
+.rbc-month-row:last-child .rbc-row-bg .rbc-off-range-bg:last-child {
+  border-bottom-right-radius: 8px;
+}
+.rbc-month-row:last-child .rbc-row-bg .rbc-day-bg:first-child {
+  border-bottom-left-radius: 8px;
+}
+.rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell button {
+  float: right;
+  font-weight: 800;
+  outline: none;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.rbc-month-row .rbc-row-content .rbc-row .rbc-now button {
+  background-color: #778899;
+  color: #fff;
+  border-radius: 15px;
+}
+.rbc-month-row .rbc-row-content .rbc-row:nth-child(2),
+.rbc-month-row .rbc-row-content .rbc-row:nth-child(3),
+.rbc-month-row .rbc-row-content .rbc-row:nth-child(4),
+.rbc-month-row .rbc-row-content .rbc-row:nth-child(5) {
+  display: flex;
+  margin-bottom: 2px;
+}
+.rbc-time-view .rbc-time-header .rbc-time-header-content .rbc-time-header-cell .rbc-header button {
+  font-weight: 800;
+  outline: none;
+  background: none;
+  border: none;
+}
+.rbc-time-view .rbc-time-content .rbc-time-gutter {
+  display: none;
+}
+.rbc-time-view .rbc-time-content {
+  height: -webkit-fill-available;
+}
+.rbc-time-view .rbc-time-content .rbc-time-column {
+  border-right: 1px solid #d1d1d1;
+}
+.rbc-time-view .rbc-time-content .rbc-time-column:last-child {
+  border-right: 0;
+}
+.rbc-events-container .rbc-event {
+  width: unset !important;
+  left: 0 !important;
+  margin-bottom: 6px;
+}
+.rbc-events-container .rbc-event .rbc-event-label {
+  display: none;
+}
+
+.rbc-event {
+  border: none;
+  box-sizing: border-box;
+  box-shadow: none;
+  background-color: #add3f1;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 700;
+  font-size: 12px;
+  height: 36px;
+  position: relative;
+  padding: 0;
+  margin: 2px 5px 2px 5px;
+}
+
+.rbc-event-content,
+.custom-event {
+  height: 100%;
+}
+.custom-event > .d-flex.align-items-center {
+  width: 100%;
+}
+.custom-event > .d-flex.align-items-center > .ml-1 {
+  /* white-space: nowrap; */
+  overflow: hidden;
+  /* width: calc(100% - 40px); */
+  text-overflow: ellipsis;
+}
+.rbc-row-bg .rbc-day-bg:last-child {
+  border-right: 0;
+}
+.event-progress {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  color: #000;
+  font-size: 10px;
+  padding: 2px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-progress-bg {
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  border-radius: 3px;
+}
+.rbc-show-more {
+  background: none;
+  border: none;
+  outline: none;
+  color: #778899;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* POPUP */
+.rbc-overlay {
+  position: absolute;
+  z-index: 5;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 4px;
+  max-height: calc(100vh - 350px);
+  overflow: auto;
+}
+.rbc-overlay .rbc-overlay-header {
+  font-weight: 800;
+  margin-bottom: 8px;
+  position: sticky;
+  top: -10px;
+  background: white;
+  z-index: 5;
+}
+.rbc-overlay .rbc-event {
+  margin-bottom: 4px;
+}
+.rbc-allday-cell {
+  position: relative;
+}
+.rbc-allday-cell .rbc-row-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+}
+.rbc-allday-cell .rbc-row-bg .rbc-day-bg {
+  border-bottom: 0;
+}
+
+.hide-time-view .calendar-div,
+.hide-time-view .rbc-calendar {
+  height: auto; /* or any other height you want to apply when hide-time-view is applied */
+}
+
+.hide-time-view .rbc-time-view {
+  display: none;
+}
+
+.calendar-filter-title {
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  padding: 7px 10px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.menu-toggle-filter {
+  width: 32px;
+  height: 32px;
+  background: #789;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+  margin-left: -16px;
+  top: calc(100vh - 150px);
+}

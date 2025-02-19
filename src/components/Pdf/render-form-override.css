@@ -1,0 +1,12 @@
+.form-div .formio-component-submit {
+  display: none;
+}
+.row {
+  flex-wrap: nowrap !important;
+}
+/* @media print {
+  .page-break {
+    break-inside: avoid;
+    page-break-before: always;
+  }
+} */

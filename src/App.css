@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'EudoxusSans-Regular';
+  src: url('./Content/fonts/EudoxusSans-Regular.woff2');
+}
+@font-face {
+  font-family: 'EudoxusSans-Medium';
+  src: url('./Content/fonts/EudoxusSans-Medium.woff');
+}
+@font-face {
+  font-family: 'EudoxusSans-Bold';
+  src: url('./Content/fonts/EudoxusSans-Bold.woff');
+}
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url('./Content/fonts/Manrope-Bold.ttf');
+}
+@font-face {
+  font-family: 'Manrope-Medium';
+  src: url('./Content/fonts/Manrope-Medium.ttf');
+}
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url('./Content/fonts/Manrope-Regular.ttf');
+}
+body {
+  background: #fff !important;
+}
+
+.nf-buttons {
+  font-weight: 800 !important;
+  text-transform: capitalize !important;
+  margin-right: 15px;
+  border-radius: 4px !important;
+}
+.toast-container {
+  border-radius: 4px !important;
+  padding: 8px;
+}
+.go685806154 {
+  padding: 0 15px;
+}
+.toast-div {
+  width: 280px;
+}
+.toast-container .toast-close svg {
+  width: 16px;
+  height: 16px;
+}
+.toast-container .toast-title {
+  font-family: 'EudoxusSans-Medium';
+  font-weight: 800;
+  font-size: 14px;
+}
+.toast-container .toast-msg {
+  font-family: 'Manrope-Regular';
+  font-size: 13px;
+}
+.TCH th {
+  cursor: pointer;
+}
+.TCH th:hover {
+  background: #e0e0e0 !important;
+}
+.recharts-wrapper svg text {
+  stroke-width: 0;
+  stroke: #fff;
+}
+#asset-image-container {
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
+}
+.small-tab {
+  font-size: 14px !important;
+  padding: 10px 16px !important;
+}
+.base-date-input {
+  cursor: pointer !important;
+  padding: 6px 10px !important;
+}
+.text-bold {
+  font-weight: 800 !important;
+}
+.text-xs {
+  font-size: 12px !important;
+}
+.text-sm {
+  font-size: 14px !important;
+}
+.text-md {
+  font-size: 16px !important;
+}
+/* headlines with lines */
+.decorated {
+  overflow: hidden;
+  text-align: center;
+}
+.decorated > span {
+  position: relative;
+  display: inline-block;
+}
+.decorated > span:before,
+.decorated > span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px solid;
+  width: 100vw;
+  margin: 0 20px;
+}
+.decorated > span:before {
+  right: 90%;
+}
+.decorated > span:after {
+  left: 90%;
+}
+.hover:hover {
+  background-color: #e6e6e6 !important;
+}
+.role-chip {
+  background: #dbdbdb;
+  font-weight: 800;
+  padding: 3px;
+  border-radius: 20px;
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+a,
+.text-accent {
+  color: #778899 !important;
+  font-weight: 800;
+}
+a:hover {
+  color: #778899 !important;
+  font-weight: 800;
+}
+.recharts-layer .recharts-sector {
+  cursor: pointer;
+}
+.table-with-row-click {
+  cursor: pointer !important;
+}
+.table-with-row-click:hover {
+  background: #00ccff15 !important;
+}
+.group-name-parent .group-name-parent {
+  display: none;
+}
+.group-name-parent:hover .group-name-parent {
+  display: block;
+}
+.MuiTableCell-sizeSmall {
+  padding: 3px 24px 3px 16px !important;
+}
+.loader-table-cell {
+  padding: 6px 0px 6px 16px !important;
+}
+.table-with-row-click-not-important,
+.pointer {
+  cursor: pointer;
+}
+.table-with-row-click-not-important:hover {
+  background: #00ccff15;
+}
+.xs-button {
+  font-size: 12px !important;
+  padding: 4px 12px !important;
+}
+.table-header-filter:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.form-io-calibration-table {
+  overflow-y: hidden;
+}
+/* table thead tr th div,
+table tbody tr td div {
+  font-size: 10px;
+} */
+/* AI Builder */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.markdown-container table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0.875rem; /* Smaller font size for tables */
+}
+
+.markdown-container th,
+.markdown-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.markdown-container th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.country-code-button {
+  font-weight: 800 !important;
+  border-radius: 4px 0 0 4px !important;
+  background-color: #f2f2f2 !important;
+  padding: 8px 15px !important;
+  z-index: 1;
+}
+
+.country-code-error {
+  border: 1px solid red !important;
+  color: red !important;
+  border-radius: 4px 0px 0px 4px !important;
+}
+
+.beamer_defaultBeamerSelector {
+  display: none !important;
+}
+
+.beamer_icon.active,
+#beamerIcon.active {
+  right: 0 !important;
+  margin-right: 10px !important;
+  top: 12px !important;
+}
+
+.rd-title-container {
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 2px 18px;
+}
+
+.rd-title-container:hover .rd-text {
+  display: block !important;
+}
+
+.text-black-reguler-bold {
+  font-style: normal !important;
+  line-height: normal !important;
+  color: #000;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+}
+
+.text-reguler {
+  font-style: normal !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+}
+
+.text-black-medium-bold {
+  font-style: normal !important;
+  line-height: normal !important;
+  color: #000;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.text-medium {
+  font-style: normal !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+.not-found-text {
+  font-style: normal !important;
+  line-height: normal !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  color: #777777 !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-top: 5px;
+}

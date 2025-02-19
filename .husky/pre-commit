@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo [Husky]🔃 Precommit checks ....
+echo [Husky]♒ Formatting ....
+npm run format && git add -A .

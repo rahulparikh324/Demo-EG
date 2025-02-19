@@ -1,0 +1,141 @@
+/* styles.css */
+
+.big-logo {
+  width: 100px; /* Adjust the size to 100px */
+  height: 60px; /* Adjust the size to 60px */
+  margin-bottom: 10px;
+}
+
+.message-container {
+  min-height: 400px; /* Increased min-height for better appearance */
+  max-height: 500px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.chat-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  line-height: 1.4;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #cce5ff;
+  align-self: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.system-message {
+  background-color: #ffffff;
+  align-self: flex-start;
+  text-align: left;
+  margin-right: auto;
+}
+
+.chat-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chat-message-container.user {
+  align-items: flex-end;
+}
+
+.chat-subheading {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.chat-logo {
+  width: 20px; /* Adjusted size for icon */
+  height: 20px; /* Adjusted size for icon */
+  margin-right: 10px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #007bff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chat-thread {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.chat-thread h3 {
+  margin-bottom: 5px;
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.file-upload-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px; /* Adjusted height to make it shorter */
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  padding: 20px 0; /* Added vertical padding */
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.file-upload-placeholder {
+  color: #aaa;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 10px; /* Added horizontal padding for better text spacing */
+}
+
+.file-list {
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.file-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.upload-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}

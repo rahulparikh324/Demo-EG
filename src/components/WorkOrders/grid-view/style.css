@@ -1,0 +1,40 @@
+.InovuaReactDataGrid__column-header:hover > .InovuaReactDataGrid__column-header__menu-tool {
+  display: none;
+}
+.InovuaReactDataGrid__cell,
+.InovuaReactDataGrid__cell--unlocked {
+  font-size: 13px !important;
+}
+.InovuaReactDataGrid__row,
+.InovuaReactDataGrid__row-cell-wrap,
+.InovuaReactDataGrid__row-hover-target,
+.InovuaReactDataGrid__cell {
+  height: 45px !important;
+}
+.InovuaReactDataGrid__cell__content {
+  height: 22px !important;
+}
+.action-col {
+  border: 1px solid #e4e3e2;
+  border-left: 0;
+}
+.action-col-header,
+.action-col-filter-row,
+.action-col-data-row {
+  font-weight: 800;
+  color: #555e68;
+  width: 100px;
+  height: 80.39px;
+  padding: 8px;
+  border-bottom: 1px solid #e4e3e2;
+  /* border-left: 1px solid #e4e3e2; */
+}
+.action-col-filter-row {
+  height: 39.39px;
+}
+.action-col-data-row {
+  padding: 0;
+}
+.InovuaReactDataGrid__column-header__filter-settings {
+  display: none;
+}
